@@ -12,5 +12,10 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Example');
 // require('./components/index');
+// require('./components/navBar')
+
+// require('./components/Navbar/Nav')
+// require('./components/NewNav/Nbar')
+
+require('./components/App');
