@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        YOJAVA
+                        YOJANA
                     </NavLogo>
                     <MobileIcon onClick={toggle} >
                         <FaBars />
