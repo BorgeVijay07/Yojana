@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import {useHistory} from 'react-router-dom'
 import { AccountContext } from './accountContext'
 import { LoginForm } from './loginform'
 import {BoxContainer,
@@ -50,8 +51,17 @@ const expandingTransition = {
 }
 
 const Signup = (props) => {
+
+    useEffect(() => {
+        if(localStorage.getItem('user_info'))
+        {
+            history.push('/');
+        }
+    }, [])
+
     const [isExpanded, setExpanded] = useState(false);
     const [active, setActive] = useState('signin');
+    const history = useHistory();
 
     const playExpandingAnimation = () => {
         setExpanded(true);

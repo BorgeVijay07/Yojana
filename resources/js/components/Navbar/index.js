@@ -1,16 +1,18 @@
 import React from 'react'
-import {FaBars} from 'react-icons/fa'
-import {Nav, 
-        NavbarContainer, 
-        NavLogo, 
-        MobileIcon, 
-        NavMenu, 
-        NavItem, 
-        NavLinks,
-        NavBtn,
-        NavBtnLink
-    
-        } from './NavbarElements'
+import { FaBars } from 'react-icons/fa'
+import {
+    Nav,
+    NavbarContainer,
+    NavLogo,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    NavBtn,
+    NavBtnLink,
+    NavLinksr
+
+} from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
     return (
@@ -24,26 +26,69 @@ const Navbar = ({ toggle }) => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <NavLinks to='about'>
-                                ABOUT
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='services'>
-                                SERVICES
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='schemes'>
-                                SCHEMES
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='contact-us'>
-                                CONTACT US
-                            </NavLinks>
-                        </NavItem>
+                        {
+                            localStorage.getItem('user_info') ?
+                                <>
+                                    <NavItem>
+                                        <NavLinksr to='/'>
+                                            HOME
+                                        </NavLinksr>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='about'>
+                                            ABOUT
+                                        </NavLinks>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='services'>
+                                            SERVICES
+                                        </NavLinks>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinksr to='/schemes'>
+                                            SCHEMES
+                                        </NavLinksr>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='contact-us'>
+                                            CONTACT US
+                                        </NavLinks>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinksr to='./dashboard1'>
+                                            DASHBOARD
+                                        </NavLinksr>
+                                    </NavItem>
+                                </>
+                                :
+                                <>
+                                    <NavItem>
+                                        <NavLinksr to='/'>
+                                            HOME
+                                        </NavLinksr>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='about'>
+                                            ABOUT
+                                        </NavLinks>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='services'>
+                                            SERVICES
+                                        </NavLinks>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinksr to='/schemes'>
+                                            SCHEMES
+                                        </NavLinksr>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLinks to='contact-us'>
+                                            CONTACT US
+                                        </NavLinks>
+                                    </NavItem>
+                                </>
+                        }
                     </NavMenu>
                     <NavBtn>
                         <NavBtnLink to='/sign-up'>
