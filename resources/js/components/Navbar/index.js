@@ -13,8 +13,18 @@ import {
     NavLinksr
 
 } from './NavbarElements'
+import { useHistory } from 'react-router-dom'
 
 const Navbar = ({ toggle }) => {
+
+    const history = useHistory();
+
+    function logout() {
+        localStorage.clear();
+        window.location.reload();
+        history.push('/');
+    }
+
     return (
         <>
             <Nav>
@@ -91,9 +101,20 @@ const Navbar = ({ toggle }) => {
                         }
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/sign-up'>
-                            SIGN UP
-                        </NavBtnLink>
+                        {
+                            localStorage.getItem('user_info') ?
+                                <>
+                                    <NavBtnLink onClick={logout}>
+                                        LOGOUT
+                                    </NavBtnLink>
+                                </>
+                                :
+                                <>
+                                    <NavBtnLink to='/sign-up'>
+                                        SIGN UP
+                                    </NavBtnLink>
+                                </>
+                        }
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

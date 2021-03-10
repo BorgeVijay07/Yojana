@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import {useHistory} from 'react-router-dom'
 import { Marginer } from '../Marginer'
 import { AccountContext } from './accountContext'
-import { BoldLink, BoxContainer, FormContainer, Input, MutedLink, SubmitButton } from './common'
+import { BoldLink, BoxContainer, CloseIcon1, FormContainer, Input, MutedLink, SubmitButton } from './common'
 
 export function SignupForm(props) {
 
@@ -29,6 +29,7 @@ export function SignupForm(props) {
         result = await result.json();
         console.warn("result", result);
         localStorage.setItem("user_info",JSON.stringify(result));
+        window.location.reload();
         history.push('/');
     }
 
@@ -49,7 +50,7 @@ export function SignupForm(props) {
                 placeholder='Confirm Password'/>
             </FormContainer>
             <Marginer direction='vertical' margin={10} />
-            <SubmitButton type='submit' onClick={signup}>Signup</SubmitButton>
+            <SubmitButton type='submit' onClick={signup}>Signup </SubmitButton>
             <Marginer direction='vertical' margin='1em' />
             <MutedLink href='#'>Already have an account? <BoldLink href='#' onClick={switchToSignin}>
                 Signin
