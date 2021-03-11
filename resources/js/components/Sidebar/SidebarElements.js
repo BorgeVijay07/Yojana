@@ -51,7 +51,24 @@ export const SidebarLink = styled( LinkS )`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #212738;
+    cursor: pointer;
+
+    &:hover {
+        color: #57C4E5;
+        transition: 0.2s ease-in-out;
+    }
+`
+
+export const SidebarLinkr = styled( LinkR )`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;

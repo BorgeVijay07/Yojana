@@ -30,7 +30,7 @@ export function SignupForm(props) {
         console.warn("result", result);
         localStorage.setItem("user_info",JSON.stringify(result));
         window.location.reload();
-        history.push('/');
+        history.push('/dashboard1');
     }
 
     return(

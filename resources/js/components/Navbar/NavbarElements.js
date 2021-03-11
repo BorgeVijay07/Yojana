@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
-import {RiLoginBoxLine} from 'react-icons/ri'
 
 export const Nav = styled.nav`
     background: #EDF2EF;
@@ -131,3 +130,61 @@ export const NavBtnLink = styled( LinkR )`
         border: 2px solid #212738;
     }
 `
+
+export const NavBtnLinkd = styled.div`
+    border-radius: 50px;
+    background: #212738;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #EDF2EF;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #EDF2EF;
+        color: #212738;
+        border: 2px solid #212738;
+    }
+`
+
+export const DashLink = styled(LinkR)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    color: #212738;
+    cursor: pointer;
+    margin-bottom: 15px;
+`
+
+export const DashBtn = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #212738;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #EDF2EF;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #EDF2EF;
+        color: #212738;
+        border: 2px solid #212738;
+    }
+`
+

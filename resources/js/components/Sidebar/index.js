@@ -1,15 +1,27 @@
 import React from 'react'
-import {SidebarContainer, 
-        Icon, 
-        CloseIcon,
-        SidebarWrapper,
-        SidebarMenu,
-        SidebarLink,
-        SideBtnWrap,
-        SidebarRoute
-        } from './SidebarElements'
+import {
+    SidebarContainer,
+    Icon,
+    CloseIcon,
+    SidebarWrapper,
+    SidebarMenu,
+    SidebarLink,
+    SideBtnWrap,
+    SidebarRoute,
+    SidebarLinkr
+} from './SidebarElements'
+import { useHistory } from 'react-router-dom'
 
 const Sidebar = ({ isOpen, toggle }) => {
+
+    const history = useHistory();
+
+    function logout() {
+        localStorage.clear();
+        window.location.reload();
+        history.push('/');
+    }
+
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -17,23 +29,63 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='about' onClick={toggle}>
-                        ABOUT
-                    </SidebarLink>
-                    <SidebarLink to='services' onClick={toggle}>
-                        SERVICES
-                    </SidebarLink>
-                    <SidebarLink to='schemes' onClick={toggle}>
-                        SCHEMES
-                    </SidebarLink>
-                    <SidebarLink to='contact-us' onClick={toggle}>
-                        CONTACT US
-                    </SidebarLink>
+                    {
+                        localStorage.getItem('user_info') ?
+                            <>
+                                <SidebarLink to='/dashboard1' onClick={toggle}>
+                                    DASHBOARD
+                                </SidebarLink>
+                                <SidebarLinkr to='/' onClick={toggle}>
+                                    HOME
+                                </SidebarLinkr>
+                                <SidebarLink to='about' onClick={toggle}>
+                                    ABOUT
+                                </SidebarLink>
+                                <SidebarLink to='services' onClick={toggle}>
+                                    SERVICES
+                                </SidebarLink>
+                                <SidebarLinkr to='/schemes' onClick={toggle}>
+                                    SCHEMES
+                                </SidebarLinkr>
+                                <SidebarLink to='contact-us' onClick={toggle}>
+                                    CONTACT US
+                                </SidebarLink>
+                            </>
+                            :
+                            <>
+                                <SidebarLinkr to='/' onClick={toggle}>
+                                    HOME
+                                </SidebarLinkr>
+                                <SidebarLink to='about' onClick={toggle}>
+                                    ABOUT
+                                </SidebarLink>
+                                <SidebarLink to='services' onClick={toggle}>
+                                    SERVICES
+                                </SidebarLink>
+                                <SidebarLinkr to='/schemes' onClick={toggle}>
+                                    SCHEMES
+                                </SidebarLinkr>
+                                <SidebarLink to='contact-us' onClick={toggle}>
+                                    CONTACT US
+                                </SidebarLink>
+                            </>
+                    }
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/sign-up'>
-                        SIGN UP
-                    </SidebarRoute>
+                    {
+                        localStorage.getItem('user_info') ?
+                            <>
+                                <SidebarRoute onClick={logout}>
+                                    LOGOUT
+                                </SidebarRoute>
+                            </>
+                            :
+                            <>
+                                <SidebarRoute to='/sign-up'>
+                                    SIGN UP
+                                </SidebarRoute>
+                            </>
+                    }
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

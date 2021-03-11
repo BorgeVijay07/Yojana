@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import {
     Nav,
@@ -10,10 +10,14 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
-    NavLinksr
+    NavLinksr,
+    NavBtnLinkd,
+    DashLink,
+    DashBtn
 
 } from './NavbarElements'
 import { useHistory } from 'react-router-dom'
+import './Navbar.css'
 
 const Navbar = ({ toggle }) => {
 
@@ -25,6 +29,10 @@ const Navbar = ({ toggle }) => {
         history.push('/');
     }
 
+    const [dashbar, setDashbar] = useState(false)
+    const showDashbar = () => setDashbar(!dashbar)
+
+    const user= JSON.parse(localStorage.getItem('user_info'));
     return (
         <>
             <Nav>
@@ -36,77 +44,47 @@ const Navbar = ({ toggle }) => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        {
-                            localStorage.getItem('user_info') ?
-                                <>
-                                    <NavItem>
-                                        <NavLinksr to='/'>
-                                            HOME
-                                        </NavLinksr>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='about'>
-                                            ABOUT
-                                        </NavLinks>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='services'>
-                                            SERVICES
-                                        </NavLinks>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinksr to='/schemes'>
-                                            SCHEMES
-                                        </NavLinksr>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='contact-us'>
-                                            CONTACT US
-                                        </NavLinks>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinksr to='./dashboard1'>
-                                            DASHBOARD
-                                        </NavLinksr>
-                                    </NavItem>
-                                </>
-                                :
-                                <>
-                                    <NavItem>
-                                        <NavLinksr to='/'>
-                                            HOME
-                                        </NavLinksr>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='about'>
-                                            ABOUT
-                                        </NavLinks>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='services'>
-                                            SERVICES
-                                        </NavLinks>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinksr to='/schemes'>
-                                            SCHEMES
-                                        </NavLinksr>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLinks to='contact-us'>
-                                            CONTACT US
-                                        </NavLinks>
-                                    </NavItem>
-                                </>
-                        }
+                        <NavItem>
+                            <NavLinksr to='/'>
+                                HOME
+                            </NavLinksr>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='about'>
+                                ABOUT
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='services'>
+                                SERVICES
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinksr to='/schemes'>
+                                SCHEMES
+                            </NavLinksr>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='contact-us'>
+                                CONTACT US
+                            </NavLinks>
+                        </NavItem>
                     </NavMenu>
                     <NavBtn>
                         {
                             localStorage.getItem('user_info') ?
                                 <>
-                                    <NavBtnLink onClick={logout}>
-                                        LOGOUT
-                                    </NavBtnLink>
+                                    <NavBtnLinkd onClick={showDashbar}>
+                                        Namaste {user.user_full_name} !!
+                                    </NavBtnLinkd>
+                                    <div className={dashbar ? 'dash-menu active' : 'dash-menu'} onClick={showDashbar}>
+                                        <DashLink to='/dashboard1' onClick={showDashbar}>
+                                            DASHBOARD
+                                            </DashLink>
+                                        <DashBtn onClick={logout}>
+                                            LOGOUT
+                                            </DashBtn>
+                                    </div>
                                 </>
                                 :
                                 <>

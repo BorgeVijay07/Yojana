@@ -1,0 +1,19 @@
+.dash-menu {
+    background-color: #EDF2EF;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    justify-content: center;
+    margin-top: 90px;
+    margin-right: 500px;
+    display: none;
+    transition: 850ms;
+    flex-direction: column;
+    padding: 40px;
+    top:0;
+}
+
+.dash-menu.active {
+    display: flex;
+    transition: 350ms;
+}
