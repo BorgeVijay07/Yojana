@@ -25,8 +25,7 @@ const BackDrop = styled(motion.div)`
     display: flex;
     flex-direction: column;
     border-radius: 50%;
-    background: rgb(2,0,36);
-    background: linear-gradient(58deg, rgba(2,0,36,0.5) 0%, rgba(87,196,229,1) 20%, rgba(0,212,255,1) 100%); 
+    background: #7BB3F0; 
 `
 
 const backdropVariants = {

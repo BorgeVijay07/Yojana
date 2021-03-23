@@ -1,0 +1,20 @@
+.contact-us .container .contactform .formbox .input:focus ~ .span,
+.contact-us .container .contactform .formbox .input:valid ~ .span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #212738;
+    font-weight: 500;
+}
+
+.contact-us .container .contactform .formbox .textarea:focus ~ .span,
+.contact-us .container .contactform .formbox .textarea:valid ~ .span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #212738;
+    font-weight: 500;
+}

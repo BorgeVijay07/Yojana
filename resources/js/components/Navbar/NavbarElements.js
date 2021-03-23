@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: #EDF2EF;
+    background: #DFECFC;
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ export const NavLinksr = styled( LinkR )`
     height: 100%;
     cursor: pointer;
 
-    &.active{
-        border-bottom: 3px solid #57C4E5;
+    &:active{
+        border-bottom: 3px solid #212738;
     }
 ` 
 
@@ -115,7 +115,7 @@ export const NavBtnLink = styled( LinkR )`
     background: #212738;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #EDF2EF;
+    color: #DFECFC;
     font-size: 16px;
     outline: none;
     border: none;
@@ -125,7 +125,7 @@ export const NavBtnLink = styled( LinkR )`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #EDF2EF;
+        background: #DFECFC;
         color: #212738;
         border: 2px solid #212738;
     }
@@ -136,7 +136,7 @@ export const NavBtnLinkd = styled.div`
     background: #212738;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #EDF2EF;
+    color: #DFECFC;
     font-size: 16px;
     outline: none;
     border: none;
@@ -146,7 +146,7 @@ export const NavBtnLinkd = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #EDF2EF;
+        background: #DFECFC;
         color: #212738;
         border: 2px solid #212738;
     }
@@ -172,7 +172,7 @@ export const DashBtn = styled.div`
     background: #212738;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #EDF2EF;
+    color: #DFECFC;
     font-size: 16px;
     outline: none;
     border: none;
@@ -182,7 +182,7 @@ export const DashBtn = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #EDF2EF;
+        background: #DFECFC;
         color: #212738;
         border: 2px solid #212738;
     }
