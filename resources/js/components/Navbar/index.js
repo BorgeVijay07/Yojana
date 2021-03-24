@@ -18,8 +18,11 @@ import {
 } from './NavbarElements'
 import { useHistory } from 'react-router-dom'
 import './Navbar.css'
+import {animateScroll as scroll} from 'react-scroll'
 
 const Navbar = ({ toggle }) => {
+
+    const [scrollNav, setScrollNav] = useState(false);
 
     const history = useHistory();
 
@@ -32,12 +35,16 @@ const Navbar = ({ toggle }) => {
     const [dashbar, setDashbar] = useState(false)
     const showDashbar = () => setDashbar(!dashbar)
 
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     const user= JSON.parse(localStorage.getItem('user_info'));
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>
+                    <NavLogo to='/' onClick = {toggleHome}>
                         YOJANA
                     </NavLogo>
                     <MobileIcon onClick={toggle} >
@@ -45,27 +52,52 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='hero'>
+                            <NavLinks to='hero' 
+                                      smooth={true} 
+                                      duration={500} 
+                                      spy={true} 
+                                      exact='true' 
+                                      offset={-80}>
                                 HOME
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='about'>
+                            <NavLinks to='about'
+                                      smooth={true} 
+                                      duration={500} 
+                                      spy={true} 
+                                      exact='true' 
+                                      offset={-80}>
                                 ABOUT
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='services'>
+                            <NavLinks to='services'
+                                      smooth={true} 
+                                      duration={500} 
+                                      spy={true} 
+                                      exact='true' 
+                                      offset={-80}>
                                 SERVICES
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinksr to='/schemes'>
+                            <NavLinksr to='/schemes'
+                                       smooth={true} 
+                                       duration={500} 
+                                       spy={true} 
+                                       exact='true' 
+                                       offset={-80}>
                                 SCHEMES
                             </NavLinksr>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='contact-us'>
+                            <NavLinks to='contact-us'
+                                      smooth={true} 
+                                      duration={500} 
+                                      spy={true} 
+                                      exact='true' 
+                                      offset={-80}>
                                 CONTACT US
                             </NavLinks>
                         </NavItem>

@@ -13,6 +13,8 @@ import {BoxContainer,
 import { SignupForm } from './signupform'
 import {motion} from 'framer-motion'
 import styled from 'styled-components'
+import Navbar from '../Navbar'
+import Footer from '../Footer';
 
 const BackDrop = styled(motion.div)`
     width: 160%;
@@ -115,6 +117,7 @@ const Signup = (props) => {
                     </BoxContainer>
                 </SignupContainer>
             </AccountContext.Provider>
+            <Footer />
         </>
     )
 }

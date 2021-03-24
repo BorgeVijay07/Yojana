@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import ContactUs from '../ContactUs';
+import Footer from '../Footer';
 import Hero from '../Hero';
 import About from '../InfoSection';
 import Navbar from '../Navbar'
@@ -22,6 +23,7 @@ const Home = () => {
             <About />
             <Services />
             <ContactUs />
+            <Footer />
         </>
     )
 }

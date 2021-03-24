@@ -8,6 +8,7 @@ export const SignupContainer = styled.div`
     align-items: center;
     justify-content: center; */
     /* margin-top:50px; */
+    height: 100vh;
 `
 
 export const BoxContainer = styled.div`
