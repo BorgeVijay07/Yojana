@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const SignupContainer = styled.div`
     /* width: 100%;
@@ -9,6 +10,7 @@ export const SignupContainer = styled.div`
     justify-content: center; */
     /* margin-top:50px; */
     height: 100vh;
+    margin-top: 80px;
 `
 
 export const BoxContainer = styled.div`
@@ -63,5 +65,60 @@ export const InnerContainer = styled.div`
     flex-direction: column;
     padding: 0 1.8em;
 `
+export const SignUpRow = styled.div`
+    display: flex;
+    margin: 0 -15px -15px -15px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+`
 
+export const SignUpColumn = styled.div`
+    margin-bottom: 15px;
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
 
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
+export const Img = styled.img`
+    padding-top: 30px;
+    padding-right: 10px;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 500px;
+`
+ 
+export const ImgWrapper = styled.div`
+    max-width: 555px;
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 768px) {
+       display: none;
+    }
+`
+
+export const Content = styled.div`
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    @media screen and (max-width: 991px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+`

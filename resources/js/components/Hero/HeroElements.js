@@ -149,6 +149,16 @@ export const Img = styled.img`
     vertical-align: middle;
     display: inline-block;
     max-height: 500px;
+    animation: rotation 20s infinite linear;
+
+    @keyframes rotation {
+        from {
+            transform : rotate(0deg);
+        }
+        to {
+            transform : rotate(359deg);
+        }
+    }
 
     @media screen and (max-width: 768px) {
         padding-right: 0;

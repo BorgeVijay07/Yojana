@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import Hero from '../Hero';
 import About from '../InfoSection';
 import Navbar from '../Navbar'
+import Schemes from '../Schemes';
 import Services from '../Services';
 import Sidebar from '../Sidebar'
 
@@ -22,6 +23,7 @@ const Home = () => {
             <Hero />
             <About />
             <Services />
+            <Schemes />
             <ContactUs />
             <Footer />
         </>

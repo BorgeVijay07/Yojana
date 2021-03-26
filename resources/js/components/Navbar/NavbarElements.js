@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 200;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled( LinkR )`
     color: #212738;
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'Aclonica', 'poppins';
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;

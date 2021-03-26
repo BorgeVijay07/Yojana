@@ -33,7 +33,14 @@ const About = () => {
                         of schemes. We will also provide them the steps they have to perform to get help from the 
                         eligible scheme.
                         </AboutP>
-                        <SButton to='/'>Our Services</SButton>
+                        <SButton to='services'
+                                 smooth={true} 
+                                 duration={500} 
+                                 spy={true} 
+                                 exact='true' 
+                                 offset={-110}>
+                            Our Services
+                        </SButton>
                     </AboutContent>
                 </AboutContainer>
             </MainSec>

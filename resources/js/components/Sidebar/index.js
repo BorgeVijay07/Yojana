@@ -35,14 +35,14 @@ const Sidebar = ({ isOpen, toggle }) => {
                                 <SidebarLink to='/dashboard1' onClick={toggle}>
                                     DASHBOARD
                                 </SidebarLink>
-                                <SidebarLinkr to='/' onClick={toggle}
+                                <SidebarLink to='hero' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
                                             offset={-80}>
                                     HOME
-                                </SidebarLinkr>
+                                </SidebarLink>
                                 <SidebarLink to='about' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
@@ -56,17 +56,17 @@ const Sidebar = ({ isOpen, toggle }) => {
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
-                                            offset={-80}>
+                                            offset={-110}>
                                     SERVICES
                                 </SidebarLink>
-                                <SidebarLinkr to='/schemes' onClick={toggle}
+                                <SidebarLink to='schemes' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
                                             offset={-80}>
                                     SCHEMES
-                                </SidebarLinkr>
+                                </SidebarLink>
                                 <SidebarLink to='contact-us' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
@@ -78,14 +78,14 @@ const Sidebar = ({ isOpen, toggle }) => {
                             </>
                             :
                             <>
-                                <SidebarLinkr to='/' onClick={toggle}
+                                <SidebarLink to='hero' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
                                             offset={-80}>
                                     HOME
-                                </SidebarLinkr>
+                                </SidebarLink>
                                 <SidebarLink to='about' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
@@ -99,17 +99,17 @@ const Sidebar = ({ isOpen, toggle }) => {
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
-                                            offset={-80}>
+                                            offset={-110}>
                                     SERVICES
                                 </SidebarLink>
-                                <SidebarLinkr to='/schemes' onClick={toggle}
+                                <SidebarLink to='schemes' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 
                                             spy={true} 
                                             exact='true' 
                                             offset={-80}>
                                     SCHEMES
-                                </SidebarLinkr>
+                                </SidebarLink>
                                 <SidebarLink to='contact-us' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 

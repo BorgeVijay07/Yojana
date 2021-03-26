@@ -8,13 +8,19 @@ import {BoxContainer,
         HeaderContainer,
         HeaderText,
         SmallText,
-        InnerContainer
+        InnerContainer,
+        SignUpRow,
+        SignUpColumn,
+        ImgWrapper,
+        Img,
+        Content
         } from './SignupElements'
 import { SignupForm } from './signupform'
 import {motion} from 'framer-motion'
 import styled from 'styled-components'
-import Navbar from '../Navbar'
 import Footer from '../Footer';
+import { Nav, NavbarContainer, NavLogo } from '../Navbar/NavbarElements'
+import Icon1 from './../Images/login.svg'
 
 const BackDrop = styled(motion.div)`
     width: 160%;
@@ -89,34 +95,50 @@ const Signup = (props) => {
 
     return (
         <>
-            <AccountContext.Provider value={contextValue}>
-                <SignupContainer className='sign-up'>
-                    <BoxContainer>
-                        <TopContainer>
-                            <BackDrop 
-                                initial={false} 
-                                animate={isExpanded ? 'expanded' : 'collapsed'} 
-                                variants={backdropVariants}
-                                transition={expandingTransition}
-                            />
-                            { active === 'signin' && <HeaderContainer>
-                                <HeaderText>Welcome</HeaderText>
-                                <HeaderText>Back</HeaderText>
-                                <SmallText>Please sign-in to continue!</SmallText>
-                            </HeaderContainer> }
-                            { active === 'signup' && <HeaderContainer>
-                                <HeaderText>Create</HeaderText>
-                                <HeaderText>Account</HeaderText>
-                                <SmallText>Please sign-up to continue!</SmallText>
-                            </HeaderContainer> }
-                        </TopContainer>
-                        <InnerContainer>
-                            {active === 'signin' && <LoginForm />}
-                            {active === 'signup' && <SignupForm />}
-                        </InnerContainer>
-                    </BoxContainer>
-                </SignupContainer>
-            </AccountContext.Provider>
+            <Nav>
+            <NavbarContainer>
+            <NavLogo to='/'>YOJANA</NavLogo>
+            </NavbarContainer>
+            </Nav>
+            <Content>
+            <SignUpRow>
+                <SignUpColumn>
+                    <ImgWrapper>
+                        <Img src= {Icon1}/>
+                    </ImgWrapper>
+                </SignUpColumn>
+                <SignUpColumn>
+                    <AccountContext.Provider value={contextValue}>
+                        <SignupContainer className='sign-up'>
+                            <BoxContainer>
+                                <TopContainer>
+                                    <BackDrop 
+                                        initial={false} 
+                                        animate={isExpanded ? 'expanded' : 'collapsed'} 
+                                        variants={backdropVariants}
+                                        transition={expandingTransition}
+                                    />
+                                    { active === 'signin' && <HeaderContainer>
+                                        <HeaderText>Welcome</HeaderText>
+                                        <HeaderText>Back</HeaderText>
+                                        <SmallText>Please sign-in to continue!</SmallText>
+                                    </HeaderContainer> }
+                                    { active === 'signup' && <HeaderContainer>
+                                        <HeaderText>Create</HeaderText>
+                                        <HeaderText>Account</HeaderText>
+                                        <SmallText>Please sign-up to continue!</SmallText>
+                                    </HeaderContainer> }
+                                </TopContainer>
+                                <InnerContainer>
+                                    {active === 'signin' && <LoginForm />}
+                                    {active === 'signup' && <SignupForm />}
+                                </InnerContainer>
+                            </BoxContainer>
+                        </SignupContainer>
+                    </AccountContext.Provider>
+                </SignUpColumn>
+            </SignUpRow>
+            </Content>
             <Footer />
         </>
     )
