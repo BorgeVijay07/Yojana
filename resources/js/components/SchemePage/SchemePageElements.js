@@ -11,7 +11,7 @@ export const MainSec = styled.div`
 `
 
 export const SchemePageContainer = styled.div`
-    height: 630px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,11 +20,11 @@ export const SchemePageContainer = styled.div`
     border-radius: 30px;
 
     @media screen and (max-width: 768px) {
-        height: 1200px;
+        height: 1300px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1150px;
+        height: 1300px;
     }
 `
 
@@ -47,5 +47,96 @@ export const NavBtnLink = styled(Link)`
         background: #DFECFC;
         color: #212738;
         border: 2px solid #212738;
+    }
+`
+
+export const SchemePageH1 = styled.h1`
+    font-size: 48px;
+    color: #212738;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+`
+
+export const SchemePageWrapper = styled.div`
+    max-width: 1000px;
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+    padding: 5px;
+    
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0px;
+        padding: 0px;
+    }
+`
+
+export const SchemePageCard = styled.div`
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    max-height: 340px;
+    padding: 25px;
+    transition: all 0.2 ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2 ease-in-out;
+        cursor: pointer;
+    }
+`
+
+export const SchemePageIconCard = styled.div`
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 200%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+`
+
+export const SchemePageIcon = styled.img`
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        height: 45px;
+        width: 45px;
+    }
+`
+
+export const SchemePageH3 = styled.h3`
+    margin-top: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
     }
 `
