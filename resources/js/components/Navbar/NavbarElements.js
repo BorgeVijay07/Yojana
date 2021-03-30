@@ -182,7 +182,7 @@ export const DashBtn = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #DFECFC;
+        background: #f8f8f8;
         color: #212738;
         border: 2px solid #212738;
     }

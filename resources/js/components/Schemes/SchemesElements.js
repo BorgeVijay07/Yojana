@@ -87,7 +87,7 @@ export const SchemeIconCard = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-radius: 200%;
+    border-radius: 50%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 `
 

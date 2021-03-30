@@ -1,5 +1,5 @@
 .dash-menu {
-    background-color: #DFECFC;
+    background-color: #f8f8f8;
     width: 250px;
     height: 150px;
     position: absolute;
@@ -11,6 +11,8 @@
     flex-direction: column;
     padding: 40px;
     top:0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .dash-menu.active {

@@ -10,7 +10,6 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
-    NavLinksr,
     NavBtnLinkd,
     DashLink,
     DashBtn
@@ -21,8 +20,6 @@ import './Navbar.css'
 import {animateScroll as scroll} from 'react-scroll'
 
 const Navbar = ({ toggle }) => {
-
-    const [scrollNav, setScrollNav] = useState(false);
 
     const history = useHistory();
 
@@ -125,6 +122,9 @@ const Navbar = ({ toggle }) => {
                                     </NavBtnLink>
                                 </>
                         }
+                        {/* <NavBtnLink to='/sign-up'>
+                            SIGN UP
+                        </NavBtnLink> */}
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

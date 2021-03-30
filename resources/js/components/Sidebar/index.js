@@ -32,9 +32,9 @@ const Sidebar = ({ isOpen, toggle }) => {
                     {
                         localStorage.getItem('user_info') ?
                             <>
-                                <SidebarLink to='/dashboard1' onClick={toggle}>
+                                <SidebarLinkr to='/dashboard1' onClick={toggle}>
                                     DASHBOARD
-                                </SidebarLink>
+                                </SidebarLinkr>
                                 <SidebarLink to='hero' onClick={toggle}
                                             smooth={true} 
                                             duration={500} 

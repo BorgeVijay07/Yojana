@@ -59,12 +59,12 @@ const expandingTransition = {
 
 const Signup = (props) => {
 
-    useEffect(() => {
-        if(localStorage.getItem('user_info'))
-        {
-            history.push('/');
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(localStorage.getItem('user_info'))
+    //     {
+    //         history.push('/');
+    //     }
+    // }, [])
 
     const [isExpanded, setExpanded] = useState(false);
     const [active, setActive] = useState('signin');
