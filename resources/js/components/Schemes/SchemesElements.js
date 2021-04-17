@@ -63,7 +63,7 @@ export const SchemesWrapper = styled.div`
     }
 `
 
-export const SchemeCard = styled.div`
+export const SchemeCard = styled(Link)`
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,7 @@ export const SchemeCard = styled.div`
     max-height: 340px;
     padding: 25px;
     transition: all 0.2 ease-in-out;
+    text-decoration: none;
 
     &:hover {
         transform: scale(1.02);
@@ -102,6 +103,8 @@ export const SchemeH3 = styled.h3`
     font-size: 15px;
     margin-bottom: 10px;
     text-align: center;
+    text-decoration: none;
+    color: #212738;
 
     @media screen and (max-width: 768px) {
         font-size: 14px;

@@ -87,7 +87,7 @@ export const SchemePageWrapper = styled.div`
     }
 `
 
-export const SchemePageCard = styled.div`
+export const SchemePageCard = styled(Link)`
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -97,6 +97,8 @@ export const SchemePageCard = styled.div`
     max-height: 340px;
     padding: 25px;
     transition: all 0.2 ease-in-out;
+    text-decoration: none;
+    color: #212738;
 
     &:hover {
         transform: scale(1.02);
@@ -140,3 +142,9 @@ export const SchemePageH3 = styled.h3`
         font-size: 12px;
     }
 `
+
+export const NavBtn = styled.nav`
+    display: flex;
+    align-items: center;
+`
+    

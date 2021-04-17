@@ -172,7 +172,7 @@ export const DashBtn = styled.div`
     background: #212738;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #DFECFC;
+    color: #f8f8f8;
     font-size: 16px;
     outline: none;
     border: none;

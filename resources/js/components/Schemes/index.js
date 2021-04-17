@@ -28,13 +28,13 @@ const Schemes = () => {
                 <SchemesContainer>
                     <SchemesH1>Schemes</SchemesH1>
                     <SchemesWrapper>
-                        <SchemeCard>
+                        <SchemeCard to='/agriculture'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon1}/>
                             </SchemeIconCard>
                             <SchemeH3>Agriculture</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard to='/child-care'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon2}/>
                             </SchemeIconCard>
@@ -46,13 +46,13 @@ const Schemes = () => {
                             </SchemeIconCard>
                             <SchemeH3>Child Development</SchemeH3>
                         </SchemeCard> */}
-                        <SchemeCard>
+                        <SchemeCard to='/education'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon4}/>
                             </SchemeIconCard>
                             <SchemeH3>Education</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard to='/employment'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon5}/>
                             </SchemeIconCard>
@@ -60,7 +60,7 @@ const Schemes = () => {
                         </SchemeCard>
                     </SchemesWrapper>
                     <SchemesWrapper>
-                        <SchemeCard>
+                        <SchemeCard to='/generic-medicine'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon6}/>
                             </SchemeIconCard>
@@ -72,19 +72,19 @@ const Schemes = () => {
                             </SchemeIconCard>
                             <SchemeH3>Insurance</SchemeH3>
                         </SchemeCard> */}
-                        <SchemeCard>
+                        <SchemeCard to='/pension'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon8}/>
                             </SchemeIconCard>
                             <SchemeH3>Pension</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard to='/mother-care'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon9}/>
                             </SchemeIconCard>
                             <SchemeH3>Mother Care</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard to='/skill-development'>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon10}/>
                             </SchemeIconCard>
