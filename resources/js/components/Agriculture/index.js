@@ -11,7 +11,13 @@ import { MainSec,
          SchemeCard,
          SchemeIconCard,
          SchemeIcon,
-         SchemeH3
+         SchemeH3,
+         SchemeDetails,
+         Scheme,
+         Schemeh4,
+         SchemeUList,
+         SchemeItem,
+         SchemeH2
         } from './AgricultureElements'
 import Footer from '../Footer';
 import Icon1 from './../Images/pics/Agriculture/ci.jpg'
@@ -74,6 +80,22 @@ const Agriculture = () => {
                         </SchemeCard>
                     </SchemeWrapper>
                 </SchemeContainer>
+                <SchemeDetails>
+                    <Scheme>
+                        <SchemeH2>Cattle Insurance Scheme</SchemeH2>
+                        <Schemeh4>Document required :</Schemeh4>
+                        <SchemeUList>
+                            <SchemeItem>Applicant’s Aadhar Card</SchemeItem>
+                            <SchemeItem>identity card</SchemeItem>
+                            <SchemeItem>Housing Certificated</SchemeItem>
+                            <SchemeItem>Farm papers</SchemeItem>
+                            <SchemeItem>Bank Account Passbook</SchemeItem>
+                            <SchemeItem>mobile number</SchemeItem>
+                            <SchemeItem>Passport Size Photo</SchemeItem>
+                        </SchemeUList>
+                        <Schemeh4>Procedure :</Schemeh4>
+                    </Scheme>
+                </SchemeDetails>
             </MainSec>
             <Footer />
         </>

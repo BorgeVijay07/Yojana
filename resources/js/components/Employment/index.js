@@ -14,11 +14,12 @@ import { MainSec,
         } from './../Agriculture/AgricultureElements'
 import { SchemeContainer } from './EmploymentElements';
 import Footer from '../Footer';
-import Icon1 from './../Images/pics/Agriculture/ci.jpg'
-import Icon2 from './../Images/pics/Agriculture/gby.png'
-import Icon3 from './../Images/pics/Agriculture/nmsa.png'
-import Icon4 from './../Images/pics/Agriculture/pkvy.jpg'
-import Icon5 from './../Images/pics/Agriculture/pmfby.png'
+import Icon1 from './../Images/pics/employment/nps.png'
+import Icon2 from './../Images/pics/employment/npy.png'
+import Icon3 from './../Images/pics/employment/pmsby.png'
+import Icon4 from './../Images/pics/employment/esi.png'
+import Icon5 from './../Images/pics/employment/pmmy.png'
+import Icon6 from './../Images/pics/employment/pmrpy.png'
 
 const Employment = () => {
     return (
@@ -49,7 +50,7 @@ const Employment = () => {
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon3}/>
                             </SchemeIconCard>
-                            <SchemeH3>Pradhan Mantri  Suraksha Bima Yojana</SchemeH3>
+                            <SchemeH3>Pradhan Mantri Suraksha Bima Yojana</SchemeH3>
                         </SchemeCard>
                         <SchemeCard>
                             <SchemeIconCard>
@@ -67,7 +68,7 @@ const Employment = () => {
                         </SchemeCard>
                         <SchemeCard>
                             <SchemeIconCard>
-                                <SchemeIcon src={Icon5}/>
+                                <SchemeIcon src={Icon6}/>
                             </SchemeIconCard>
                             <SchemeH3>Pradhan Mantri Rojgar Protsahan Yojana</SchemeH3>
                         </SchemeCard>

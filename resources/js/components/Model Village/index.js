@@ -5,8 +5,16 @@ import { MainSec,
          BgContainer,
          ImgBg,
          HeadingContainer,
-         Heading
+         Heading,
+         SchemeWrapper,
+         SchemeCard,
+         SchemeIconCard,
+         SchemeIcon,
+         SchemeH3
         } from './../Agriculture/AgricultureElements'
+import { SchemeContainer } from './VillageElements';
+import Footer from '../Footer';
+import Icon1 from './../Images/pics/model village/sagy.png'
 
 const ModelVillage = () => {
     return (
@@ -19,7 +27,18 @@ const ModelVillage = () => {
                     </BgContainer>
                     <Heading>MODEL VILLAGE</Heading>
                 </HeadingContainer>
+                <SchemeContainer>
+                    <SchemeWrapper>
+                        <SchemeCard>
+                            <SchemeIconCard>
+                                <SchemeIcon src={Icon1}/>
+                            </SchemeIconCard>
+                            <SchemeH3>Saansad Adarsh Gram Yojana</SchemeH3>
+                        </SchemeCard>
+                    </SchemeWrapper>
+                </SchemeContainer>
             </MainSec>
+            <Footer />
         </>
     )
 }

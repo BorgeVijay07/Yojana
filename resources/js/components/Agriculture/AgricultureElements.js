@@ -161,3 +161,45 @@ export const SchemeH3 = styled.h3`
         font-size: 14px;
     }
 `
+
+export const SchemeDetails = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    color: #212738;
+    background-color: #f8f8f8;
+    margin-top: 40px;
+    border-radius: 30px;
+`
+
+export const Scheme = styled.div`
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 60px;
+`
+
+export const Schemeh4 = styled.h4`
+    font-size: 20px;
+    padding-top: 10px;
+`
+
+export const SchemeUList = styled.ul`
+    list-style: disc;
+    padding-left: 60px;
+    padding-top: 10px;
+`
+
+export const SchemeItem = styled.li`
+    font-size: 16px;
+    list-style: disc;
+`
+
+export const SchemeH2 = styled.h2`
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+`

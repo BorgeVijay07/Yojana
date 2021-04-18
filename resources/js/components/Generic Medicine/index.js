@@ -5,8 +5,16 @@ import { MainSec,
          BgContainer,
          ImgBg,
          HeadingContainer,
-         Heading
+         Heading,
+         SchemeWrapper,
+         SchemeCard,
+         SchemeIconCard,
+         SchemeIcon,
+         SchemeH3
         } from './../Agriculture/AgricultureElements'
+import { SchemeContainer } from './MedicineElements';
+import Footer from '../Footer';
+import Icon1 from './../Images/pics/generic medicine/pmjas.png'
 
 const GenericMedicine = () => {
     return (
@@ -19,7 +27,18 @@ const GenericMedicine = () => {
                     </BgContainer>
                     <Heading>GENERIC MEDICINE</Heading>
                 </HeadingContainer>
+                <SchemeContainer>
+                    <SchemeWrapper>
+                        <SchemeCard>
+                            <SchemeIconCard>
+                                <SchemeIcon src={Icon1}/>
+                            </SchemeIconCard>
+                            <SchemeH3>Pradhan Mantri Jan Aushadhi Scheme</SchemeH3>
+                        </SchemeCard>
+                    </SchemeWrapper>
+                </SchemeContainer>
             </MainSec>
+            <Footer />
         </>
     )
 }
