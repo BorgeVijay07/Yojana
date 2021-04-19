@@ -180,26 +180,67 @@ export const Scheme = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0 60px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
 `
 
 export const Schemeh4 = styled.h4`
     font-size: 20px;
     padding-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
 `
 
 export const SchemeUList = styled.ul`
     list-style: disc;
     padding-left: 60px;
     padding-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 40px;
+    }
 `
 
 export const SchemeItem = styled.li`
     font-size: 16px;
     list-style: disc;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
 `
 
 export const SchemeH2 = styled.h2`
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+    }
+`
+
+export const SchemeSubItem = styled.li`
+    list-style: square;
+    font-size: 16px;
+    margin-left: 60px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+`
+
+export const SchemeP = styled.p`
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
 `
