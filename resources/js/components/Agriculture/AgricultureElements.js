@@ -244,3 +244,52 @@ export const SchemeP = styled.p`
         font-size: 15px;
     }
 `
+
+export const SchemeItemHead = styled.h5`
+    font-size: 16px;
+`
+
+export const SchemeTable = styled.table`
+    color: #212738;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    border: 2px solid #212738;
+    border-collapse: collapse;
+    margin-top: 15px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+`
+
+export const SchemeTableR = styled.tr`
+    font-size: 16px;
+    border: 2px solid #212738;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+`
+
+export const SchemeTableH = styled.th`
+    font-size: 17px;
+    border: 2px solid #212738;
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+`
+
+export const SchemeTableD = styled.td`
+    font-size: 16px;
+    border: 2px solid #212738;
+    padding: 5px 10px;
+
+    &:first-child{
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+`

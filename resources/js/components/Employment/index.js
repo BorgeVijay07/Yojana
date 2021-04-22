@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Category from './../Category'
 import crowd from './../Images/emp.jpg'
 import { MainSec,
@@ -10,7 +10,10 @@ import { MainSec,
          SchemeCard,
          SchemeIconCard,
          SchemeIcon,
-         SchemeH3
+         SchemeH3,
+         SchemeDetails,
+         Scheme,
+         SchemeH2
         } from './../Agriculture/AgricultureElements'
 import { SchemeContainer } from './EmploymentElements';
 import Footer from '../Footer';
@@ -22,6 +25,68 @@ import Icon5 from './../Images/pics/employment/pmmy.png'
 import Icon6 from './../Images/pics/employment/pmrpy.png'
 
 const Employment = () => {
+
+    const [scheme1, setScheme1] = useState(true);
+    const [scheme2, setScheme2] = useState(false);
+    const [scheme3, setScheme3] = useState(false);
+    const [scheme4, setScheme4] = useState(false);
+    const [scheme5, setScheme5] = useState(false);
+    const [scheme6, setScheme6] = useState(false);
+
+    const showScheme1 = () =>{
+        setScheme1(true);
+        setScheme2(false);
+        setScheme3(false);
+        setScheme4(false);
+        setScheme5(false);
+        setScheme6(false);
+    }
+
+    const showScheme2 = () =>{
+        setScheme1(false);
+        setScheme2(true);
+        setScheme3(false);
+        setScheme4(false);
+        setScheme5(false);
+        setScheme6(false);
+    }
+
+    const showScheme3 = () =>{
+        setScheme1(false);
+        setScheme2(false);
+        setScheme3(true);
+        setScheme4(false);
+        setScheme5(false);
+        setScheme6(false);
+    }
+
+    const showScheme4 = () =>{
+        setScheme1(false);
+        setScheme2(false);
+        setScheme3(false);
+        setScheme4(true);
+        setScheme5(false);
+        setScheme6(false);
+    }
+
+    const showScheme5 = () =>{
+        setScheme1(false);
+        setScheme2(false);
+        setScheme3(false);
+        setScheme4(false);
+        setScheme5(true);
+        setScheme6(false);
+    }
+
+    const showScheme6 = () =>{
+        setScheme1(false);
+        setScheme2(false);
+        setScheme3(false);
+        setScheme4(false);
+        setScheme5(false);
+        setScheme6(true);
+    }
+
     return (
         <>
             <Category />
@@ -34,25 +99,25 @@ const Employment = () => {
                 </HeadingContainer>
                 <SchemeContainer>
                     <SchemeWrapper>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme1}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon1}/>
                             </SchemeIconCard>
                             <SchemeH3>National Pension Scheme for Traders and Self Employed Persons</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme2}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon2}/>
                             </SchemeIconCard>
                             <SchemeH3>National Pension Yojana</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme3}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon3}/>
                             </SchemeIconCard>
                             <SchemeH3>Pradhan Mantri Suraksha Bima Yojana</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme4}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon4}/>
                             </SchemeIconCard>
@@ -60,13 +125,13 @@ const Employment = () => {
                         </SchemeCard>
                     </SchemeWrapper>
                     <SchemeWrapper>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme5}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon5}/>
                             </SchemeIconCard>
                             <SchemeH3>Pradhan Mantri Mudra Yojana</SchemeH3>
                         </SchemeCard>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme6}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon6}/>
                             </SchemeIconCard>
@@ -74,6 +139,44 @@ const Employment = () => {
                         </SchemeCard>
                     </SchemeWrapper>
                 </SchemeContainer>
+                <SchemeDetails>
+                    {scheme1?
+                        <Scheme>
+                            <SchemeH2>National Pension Scheme for Traders and Self Employed Persons</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                    {scheme2?
+                        <Scheme>
+                            <SchemeH2>National Pension Yojana</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                    {scheme3?
+                        <Scheme>
+                            <SchemeH2>Pradhan Mantri Suraksha Bima Yojana</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                    {scheme4?
+                        <Scheme>
+                            <SchemeH2>Employee State Insurance Scheme</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                    {scheme5?
+                        <Scheme>
+                            <SchemeH2>Pradhan Mantri Mudra Yojana</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                    {scheme6?
+                        <Scheme>
+                            <SchemeH2>Pradhan Mantri Rojgar Protsahan Yojana</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                </SchemeDetails>
             </MainSec>
             <Footer />
         </>

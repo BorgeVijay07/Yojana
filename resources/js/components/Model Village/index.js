@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Category from './../Category'
 import crowd from './../Images/village.jpg'
 import { MainSec,
@@ -10,13 +10,23 @@ import { MainSec,
          SchemeCard,
          SchemeIconCard,
          SchemeIcon,
-         SchemeH3
+         SchemeH3,
+         SchemeDetails,
+         Scheme,
+         SchemeH2
         } from './../Agriculture/AgricultureElements'
 import { SchemeContainer } from './VillageElements';
 import Footer from '../Footer';
 import Icon1 from './../Images/pics/model village/sagy.png'
 
 const ModelVillage = () => {
+
+    const [scheme1, setScheme1] = useState(true);
+   
+    const showScheme1 = () =>{
+        setScheme1(true);
+    }
+
     return (
         <>
             <Category />
@@ -29,7 +39,7 @@ const ModelVillage = () => {
                 </HeadingContainer>
                 <SchemeContainer>
                     <SchemeWrapper>
-                        <SchemeCard>
+                        <SchemeCard onClick = {showScheme1}>
                             <SchemeIconCard>
                                 <SchemeIcon src={Icon1}/>
                             </SchemeIconCard>
@@ -37,6 +47,14 @@ const ModelVillage = () => {
                         </SchemeCard>
                     </SchemeWrapper>
                 </SchemeContainer>
+                <SchemeDetails>
+                    {scheme1?
+                        <Scheme>
+                            <SchemeH2>Saansad Adarsh Gram Yojana</SchemeH2>
+                        </Scheme>
+                    :
+                    null}
+                </SchemeDetails>
             </MainSec>
             <Footer />
         </>
