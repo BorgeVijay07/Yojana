@@ -17,7 +17,12 @@ import { MainSec,
          Schemeh4,
          SchemeUList,
          SchemeItem,
-         SchemeP
+         SchemeP,
+         SchemeTable,
+         SchemeTableR,
+         SchemeTableH,
+         SchemeTableD,
+         SchemeSubItem
         } from './../Agriculture/AgricultureElements'
 import { SchemeContainer } from './ChildDevelopmentElements';
 import Footer from '../Footer';
@@ -157,7 +162,7 @@ const ChildDevelopment = () => {
                         <Scheme>
                             <SchemeH2>Pradhan Mantri Matru Vandana Yojana</SchemeH2>
                             <Schemeh4>Document Required:</Schemeh4>
-                            <SchemeP>First Installment:</SchemeP>
+                            <SchemeP><b>First Installment:</b></SchemeP>
                             <SchemeUList>
                                 <SchemeItem>Documents to be submitted within 150 days from the last menstrual date:</SchemeItem>
                                 <SchemeItem>Duly filled application Form 1A</SchemeItem>
@@ -165,13 +170,13 @@ const ChildDevelopment = () => {
                                 <SchemeItem>Copy of identity proof</SchemeItem>
                                 <SchemeItem>Copy of bank or post office account passbook</SchemeItem>
                             </SchemeUList>
-                            <SchemeP>Second Installment:</SchemeP>
+                            <SchemeP><b>Second Installment:</b></SchemeP>
                             <SchemeUList>
                                 <SchemeItem>Documents to be submitted within 180 days from the last menstrual date:</SchemeItem>
                                 <SchemeItem>Duly filled application Form 1B</SchemeItem>
                                 <SchemeItem>Copy of MCP Card</SchemeItem>
                             </SchemeUList>
-                            <SchemeP>Third Installment:</SchemeP>
+                            <SchemeP><b>Third Installment:</b></SchemeP>
                             <SchemeUList>
                                 <SchemeItem>Documents to be submitted after registering childbirth.</SchemeItem>
                                 <SchemeItem>Duly filled application Form 1C</SchemeItem>
@@ -181,7 +186,7 @@ const ChildDevelopment = () => {
                                 <SchemeItem>Birth Registration Certificate</SchemeItem>
                             </SchemeUList>
                             <Schemeh4>Procedure:</Schemeh4>
-                            <SchemeP>Offline procedure to avail Pradhan Mantri Matru Vandana Yojana:</SchemeP>
+                            <SchemeP><b>Offline procedure to avail Pradhan Mantri Matru Vandana Yojana:</b></SchemeP>
                             <SchemeUList>
                                 <SchemeItem>Step 1: The first step is to register yourself under this scheme. You can register 
                                     yourself by visiting the nearby Anganwadi Centre (AWC)/ approved Health facility. 
@@ -200,7 +205,7 @@ const ChildDevelopment = () => {
                                     childbirth registration report, a copy of the MCP card which shows that child has received the 
                                     first cycle of immunization.</SchemeItem>
                             </SchemeUList>
-                            <SchemeP>For PMMVY online registration:</SchemeP>
+                            <SchemeP><b>For PMMVY online registration:</b></SchemeP>
                             <SchemeUList>
                                 <SchemeItem>Step 1: Visit the website https://pmmvy-cas.nic.in.</SchemeItem>
                                 <SchemeItem>Step 2: Using your login credentials login to the PMMVY software.</SchemeItem>
@@ -235,9 +240,69 @@ const ChildDevelopment = () => {
                         <Scheme>
                             <SchemeH2>National Creche Scheme</SchemeH2>
                             <Schemeh4>Document Required:</Schemeh4>
+                            <SchemeUList>
+                                <SchemeItem>Audited accounts for the last 3 years along with a copy of their certified balance sheet for 
+                                    the previous year</SchemeItem>
+                                <SchemeItem>A statement giving details such as year, purpose, amount etc. of assistance that is received 
+                                    during the last 3 years from the Central and State Government, Central Social Welfare Board, local 
+                                    bodies or any other quasi-Government foundations including the requests made thereof to any one of 
+                                    these or any other organization for the project under the consideration or for any other projects.</SchemeItem>
+                                <SchemeItem>A copy of the registration certificate duly attested by a Gazetted Officer</SchemeItem>
+                                <SchemeItem>A copy of Memorandum of Association (MOA)/Bye-Laws of the Organisation duly signed/attested 
+                                    by the application.</SchemeItem>
+                                <SchemeItem>List of members of the managing committee with their qualifications and occupations.</SchemeItem>
+                                <SchemeItem>Copies of the annual report and audited statements of accounts for the last two years duly 
+                                    signed/attested by the applicant.</SchemeItem>
+                                <SchemeItem>Qualification of Creche Worker and helper</SchemeItem>
+                                <SchemeItem>Certificate of Training of Creche Worker and helper.</SchemeItem>
+                                <SchemeItem>Any other documents if required</SchemeItem>
+                            </SchemeUList>
                             <Schemeh4>Procedure:</Schemeh4>
+                            <SchemeP>To apply under the National Creche Scheme, the implementing agency/Mother NGOs will forward the 
+                                application form of National Creche Scheme for the opening of a creche to the Ministry duly recommended 
+                                by their State Units. It will be open to the Central Social Welfare Board (CSWB) to entertain an 
+                                application directly from an organization/institution of an All India character and then, send the 
+                                application form to the Ministry. No crèche will be relocated/opened without the approval of the Ministry. 
+                                However, new crèche would be opened or relocated with the approval of the Ministry only in lieu of the 
+                                closed creches, where the Anganwadi Centre-cum-Creche under ICDS does not exist or is not proposed to be 
+                                established. In case implementing Agency or Mother, NGOs decide to close any of its crèches due to 
+                                malfunctioning or else, a report of the same to be sent to the Ministry.</SchemeP>
+                            <Schemeh4>User Charges:</Schemeh4>
+                            <SchemeTable>
+                                <SchemeTableR>
+                                    <SchemeTableH>Sr No.</SchemeTableH>
+                                    <SchemeTableH>Families Type</SchemeTableH>
+                                    <SchemeTableH>Charges</SchemeTableH>
+                                </SchemeTableR>
+                                <SchemeTableR>
+                                    <SchemeTableD>1</SchemeTableD>
+                                    <SchemeTableD>BPL families</SchemeTableD>
+                                    <SchemeTableD>Rs.20/- per child per month.</SchemeTableD>
+                                </SchemeTableR>
+                                <SchemeTableR>
+                                    <SchemeTableD>2</SchemeTableD>
+                                    <SchemeTableD>Families with the monthly income (Both Parents) of up to Rs.12,000/-</SchemeTableD>
+                                    <SchemeTableD>Rs.100/- per child per month</SchemeTableD>
+                                </SchemeTableR>
+                                <SchemeTableR>
+                                    <SchemeTableD>3</SchemeTableD>
+                                    <SchemeTableD>Families with the monthly income (Both Parents) of above Rs.12,000/-</SchemeTableD>
+                                    <SchemeTableD>Rs.200/- per child per month</SchemeTableD>
+                                </SchemeTableR>
+                            </SchemeTable>
                             <Schemeh4>Eligibility Criteria:</Schemeh4>
+                            <SchemeP>The State Government, Voluntary Institutions, Mahila Mandals with the know report of service in 
+                                the field of child welfare department and registered under the Societies Registration Act, 1860 or 
+                                registered as a Public Trust at least for the period for last 2 years are eligible for applying for 
+                                the financial assistance from the fund.</SchemeP>
                             <Schemeh4>Benefits:</Schemeh4>
+                            <SchemeUList>
+                                <SchemeItem>Daycare facilities including sleeping facilities.</SchemeItem>
+                                <SchemeItem>Early stimulation for children below 3 years and pre-school education for 3 to 6 years old children.</SchemeItem>
+                                <SchemeItem>Supplementary nutrition (to be locally sourced)</SchemeItem>
+                                <SchemeItem>Growth monitoring.</SchemeItem>
+                                <SchemeItem>Health check-up and immunization.</SchemeItem>
+                            </SchemeUList>
                         </Scheme>
                     :
                     null}
@@ -245,9 +310,52 @@ const ChildDevelopment = () => {
                         <Scheme>
                             <SchemeH2>Sabla Yojana (Adolescent Girls)</SchemeH2>
                             <Schemeh4>Document Required:</Schemeh4>
+                            <SchemeUList>
+                                <SchemeItem>Aadhar Card</SchemeItem>
+                                <SchemeItem>Birth Place</SchemeItem>
+                            </SchemeUList>
                             <Schemeh4>Procedure:</Schemeh4>
+                            <SchemeP><b>Apply Online through aaplesarkar :</b></SchemeP>
+                            <SchemeUList>
+                                <SchemeItem>The applicant needs to register on the website Create User Id</SchemeItem>
+                                <SchemeItem>The applicant can login using the credentials and fill the form as instructed</SchemeItem>
+                                <SchemeItem>The applicant can fill the online application form for “Application form for Sabla Yojna: 
+                                    Enrolment of Adolescent Girls” in the citizen login section: Online Application</SchemeItem>
+                                <SchemeItem>Submit the application</SchemeItem>
+                                <SchemeItem>After submitting the application, user will get a reference slip or number which 
+                                    should be kept for future reference.</SchemeItem>
+                                <SchemeItem>Status of the application can be tracked by the user in “Track your Application” section. 
+                                    For tracking the application, application id or reference number will be required.</SchemeItem>
+                            </SchemeUList>
+                            <SchemeP><b>Apply in Person:</b></SchemeP>
+                            <SchemeUList>
+                                <SchemeItem>All the eligible and the needy adolescent girls can contact any of the person mentioned 
+                                    below to apply for the scheme in order to avail the benefits of the scheme.
+                                    <SchemeSubItem>Anganwadi Workers at village level</SchemeSubItem>
+                                    <SchemeSubItem>Supervisor at circle level</SchemeSubItem>
+                                    <SchemeSubItem>Child Development Project Officers at the block level</SchemeSubItem>
+                                    <SchemeSubItem>Concerned District programme officer</SchemeSubItem>
+                                    </SchemeItem>
+                                <SchemeItem>Applications can also be made in-person through the Women and Child Development 
+                                    Department (Government of Maharashtra) offices and sub-offices.</SchemeItem>
+                                <SchemeItem>You will be able to find the office location information and contact information 
+                                    under the following link :Office Locations</SchemeItem>
+                                <SchemeItem>Please make sure you have all the documents (if any) that are listed under the 
+                                    “Required Documents” section of this page.</SchemeItem>
+                                <SchemeItem>Fill the application form with the required information</SchemeItem>
+                                <SchemeItem>Submit the form in person to Women and Child Development Department Maharashtra.</SchemeItem>
+                                <SchemeItem>After the authorities validate your application and the documents that are submitted they will 
+                                    allow for enrolment of adolescent girls under sabla yojna.</SchemeItem>
+                            </SchemeUList>
                             <Schemeh4>Eligibility Criteria:</Schemeh4>
+                            <SchemeP>Adolescent girls of 11-18 years of age group are eligible for the scheme.</SchemeP>
                             <Schemeh4>Benefits:</Schemeh4>
+                            <SchemeUList>
+                                <SchemeItem>Health check-up and referral services.</SchemeItem>
+                                <SchemeItem>Nutrition and health education (NHE) Counseling/guidance on family welfare, ARSH, 
+                                    child care practices and home management.</SchemeItem>
+                                <SchemeItem>Life skills education and accessing public services.</SchemeItem>
+                            </SchemeUList>
                         </Scheme>
                     :
                     null}

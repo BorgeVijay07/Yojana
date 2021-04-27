@@ -208,6 +208,7 @@ export const SchemeUList = styled.ul`
 export const SchemeItem = styled.li`
     font-size: 16px;
     list-style: disc;
+    text-align: justify;
 
     @media screen and (max-width: 768px) {
         font-size: 15px;
@@ -228,6 +229,7 @@ export const SchemeSubItem = styled.li`
     list-style: square;
     font-size: 16px;
     margin-left: 60px;
+    text-align: justify;
 
     @media screen and (max-width: 768px) {
         font-size: 15px;
@@ -284,10 +286,6 @@ export const SchemeTableD = styled.td`
     font-size: 16px;
     border: 2px solid #212738;
     padding: 5px 10px;
-
-    &:first-child{
-        text-align: center;
-    }
 
     @media screen and (max-width: 768px) {
         font-size: 15px;
