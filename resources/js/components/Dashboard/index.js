@@ -107,33 +107,39 @@ const Dashboard = () => {
                                     null
                             }                        
                         <div className='cards'>
+                            <a href='/scheme-page'>
                             <div className='card-single'>
                                 <div>
-                                    <h1>54</h1>
-                                    <span>Available Schemes</span>
+                                    <h1>17</h1>
+                                    <span>Available Categories</span>
                                 </div>
                                 <div>
                                     <span className='las la-list'></span>
                                 </div>
                             </div>
+                            </a>
+                            <a href='/agriculture'>
+                            <div className='card-single'>
+                                <div>
+                                    <h1>72</h1>
+                                    <span>Available Schemes</span>
+                                </div>
+                                <div>
+                                    <span className='las la-clipboard-list'></span>
+                                </div>
+                            </div>
+                            </a>
+                            <a href='#'>
                             <div className='card-single'>
                                 <div>
                                     <h1>0</h1>
                                     <span>Applicable Schemes</span>
                                 </div>
                                 <div>
-                                    <span className='las la-clipboard-list'></span>
-                                </div>
-                            </div>
-                            <div className='card-single'>
-                                <div>
-                                    <h1>0</h1>
-                                    <span>Applied Schemes</span>
-                                </div>
-                                <div>
                                     <span className='las la-list-alt'></span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div className='available'>
                             <h1>Scheme Categories</h1>
@@ -222,7 +228,127 @@ const Dashboard = () => {
                     {
                         profile?
                         <div className='profile'>
-                            <h1>Profile</h1>
+                        <h1>My Profile :</h1>
+                        <div className='scheme-form'>
+                            <h1>Agriculture</h1>
+                                <form>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Age</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Income</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='india' name='india' value='1'></input>
+                                        <label for='india'>Country : India</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='maharashtra' name='maharashtra' value='1'></input>
+                                        <label for='maharashtra'>State : Maharashtra</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='agriculture-land' name='agriculture-land' value='1'></input>
+                                        <label for='agriculture-land'>Owns agriculture land</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='animal' name='animal' value='1'></input>
+                                        <label for='animal'>Owns Animal</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <select name='occupation' id='gender'>
+                                            <option>Occupation</option>
+                                            <option value='farmer'>Farmer</option>
+                                            <option value='fisherman'>Fisherman</option>
+                                            <option value='other'>Other</option>
+                                        </select>
+                                    </div>
+                                    <div className='form-button'>
+                                        <input type='submit' value='Submit'></input>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className='scheme-form'>
+                                <h1>Health</h1>
+                                <form>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Age</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Caste</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Occupation</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='text' required></input>
+                                        <span>Income</span>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='disability' name='disability' value='1'></input>
+                                        <label for='disability'>Disability</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='landless' name='landless' value='1'></input>
+                                        <label for='landless'>Landless</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='female-head' name='female-head' value='1'></input>
+                                        <label for='female-head'>Female head with no adult male</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='saving-account' name='saving-account' value='1'></input>
+                                        <label for='saving-account'>Saving account</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='adhar-link' name='adhar-link' value='1'></input>
+                                        <label for='adhar-link'>Adhar card link</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='ration-card' name='ration-card' value='1'></input>
+                                        <label for='ration-card'>Ration card</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='income-certificate' name='income-certificate' value='1'></input>
+                                        <label for='income-certificate'>Income Certificate</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='migrant' name='migrant' value='1'></input>
+                                        <label for='migrant'>Migrant</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='document-verified' name='document-verified' value='1'></input>
+                                        <label for='document-verified'>Document verified</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <input type='checkbox' id='bpl' name='bpl' value='1'></input>
+                                        <label for='bpl'>Below Poverty Line</label>
+                                    </div>
+                                    <div className='form-item'>
+                                        <select name='gender' id='gender'>
+                                            <option>Gender</option>
+                                            <option value='male'>Male</option>
+                                            <option value='female'>Female</option>
+                                            <option value='other'>Other</option>
+                                        </select>
+                                    </div>
+                                    <div className='form-item'>
+                                        <select name='state' id='gender'>
+                                            <option>State</option>
+                                            <option value='maharashtra'>Maharashtra</option>
+                                            <option value='kerala'>Kerala</option>
+                                            <option value='other'>Other</option>
+                                        </select>
+                                    </div>
+                                    <div className='form-button'>
+                                        <input type='submit' value='Submit'></input>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         :
                         null

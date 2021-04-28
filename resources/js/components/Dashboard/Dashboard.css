@@ -529,3 +529,128 @@ main {
         margin-left: 0rem !important;
     }
 }
+
+.profile h1{
+    color: #212738;
+}
+
+.profile .scheme-form{
+    background-color: #fff;
+    padding: 30px;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.profile .scheme-form h1{
+    color: #212738;
+    font-size: 25px;
+    text-align: center;
+}
+
+.profile form{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.profile .form-item{
+    position: relative;
+    margin-bottom: 35px;
+    width: 47%;
+}
+
+.profile .form-item input[type = text]{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #212738;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #212738;
+}
+
+.profile .form-item span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.profile form .form-item input:focus ~ span,
+.profile form .form-item input:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #212738;
+    font-weight: 500;
+}
+
+.profile select{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #212738;
+    border: 1px solid #212738;
+}
+
+.form-item input[type=checkbox]{
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+}
+
+.form-item label{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #212738;
+}
+
+@media screen and (max-width: 768px){
+    .profile .form-item{
+        width: 100%;
+    }
+}
+
+.profile .scheme-form .form-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .scheme-form input[type=submit]{
+    border-radius: 50px;    
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #212738;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile .scheme-form input[type=submit]:hover{
+    transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #212738;
+        border: 1px solid #212738;
+}
+
