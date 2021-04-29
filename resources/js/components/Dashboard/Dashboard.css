@@ -543,6 +543,7 @@ main {
     align-items: center; */
     margin: 20px 0px;
     border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .profile .scheme-form h1{
