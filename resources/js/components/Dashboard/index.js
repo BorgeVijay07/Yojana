@@ -257,7 +257,7 @@ const Dashboard = () => {
                                         <label for='animal'>Owns Animal</label>
                                     </div>
                                     <div className='form-item'>
-                                        <select name='occupation' id='gender'>
+                                        <select name='occupation' id='occupation'>
                                             <option>Occupation</option>
                                             <option value='farmer'>Farmer</option>
                                             <option value='fisherman'>Fisherman</option>
