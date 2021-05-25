@@ -10,12 +10,17 @@ import Icon6 from './../Images/drugs.png'
 import Icon8 from './../Images/retirement.png'
 import Icon9 from './../Images/mother.png'
 import Icon10 from './../Images/logical-thinking.png'
+import Icon11 from './../Images/pics/Agriculture/ci.jpg'
+import Icon12 from './../Images/pics/child care/bsy.png'
+import Icon13 from './../Images/pics/education/nss.png'
+import Icon14 from './../Images/pics/employment/nps.png'
+import Icon15 from './../Images/pics/generic medicine/pmjas.png'
 import Footer from '../Footer';
 
 const Dashboard = () => {
 
     const history = useHistory();
-    const user= JSON.parse(localStorage.getItem('user_info'));
+    // const user= JSON.parse(localStorage.getItem('user_info'));
     const [dashboard, setDashboard] = useState(true);
     const [profile, setProfile] = useState(false);
     const [editProfile, setEditProfile] = useState(true);
@@ -26,12 +31,12 @@ const Dashboard = () => {
         history.push('/');
     }
 
-    useEffect(() => {
-        if(!localStorage.getItem('user_info'))
-        {
-            history.push('/sign-up');
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(!localStorage.getItem('user_info'))
+    //     {
+    //         history.push('/sign-up');
+    //     }
+    // }, [])
 
     const showDashboard = () => {
         setDashboard(true);
@@ -85,7 +90,7 @@ const Dashboard = () => {
                          <div className='user-wrapper'>
                              <img src={logo} alt='img' width='40px' height='40px'/>
                              <div>
-                                 <h4>{user.user_full_name}</h4>
+                                 <h4>Vijay</h4>
                                  <small>Super User</small>
                              </div>
                          </div>
@@ -105,13 +110,14 @@ const Dashboard = () => {
                                     </div>
                                     :
                                     null
-                            }                        
+                            }         
+                        <marquee>!!! New Scheme Comming Soon : PM Kalyan Anna Yojana ( Government Provide Free Food to 800 Million ) !!!</marquee>               
                         <div className='cards'>
                             <a href='/scheme-page'>
                             <div className='card-single'>
                                 <div>
                                     <h1>17</h1>
-                                    <span>Available Categories</span>
+                                    <span>Scheme Categories</span>
                                 </div>
                                 <div>
                                     <span className='las la-list'></span>
@@ -129,10 +135,10 @@ const Dashboard = () => {
                                 </div>
                             </div>
                             </a>
-                            <a href='#'>
+                            <a href='/applicable-scheme-page'>
                             <div className='card-single'>
                                 <div>
-                                    <h1>0</h1>
+                                    <h1>05</h1>
                                     <span>Applicable Schemes</span>
                                 </div>
                                 <div>
@@ -220,6 +226,58 @@ const Dashboard = () => {
                                 
                             </div>
                             <a href='/scheme-page'><button>View More</button></a>
+                        </div>
+                        <div className='applicable'>
+                            <h1>Applicable Schemes</h1>
+                            <div className='scheme-wrapper'>
+                                <a href='/agriculture'>
+                                    <div className='scheme-card'>
+                                        <div className='img-card'>
+                                            <img src={Icon11} alt='farmer'></img>
+                                        </div>
+                                        <h3>Cattle Insurance Scheme</h3>
+                                    </div>
+                                </a>
+                                
+                                <a href='/child-care'>
+                                    <div className='scheme-card'>
+                                        <div className='img-card'>
+                                            <img src={Icon12} alt='farmer'></img>
+                                        </div>
+                                        <h3>Balika Samridhi Yojana</h3>
+                                    </div>
+                                </a>
+                                
+                                <a href='/education'>
+                                    <div className='scheme-card'>
+                                        <div className='img-card'>
+                                            <img src={Icon13} alt='farmer'></img>
+                                        </div>
+                                        <h3>National Scholarship Scheme</h3>
+                                    </div>
+                                </a>
+                                
+                                <a href='/employment'>
+                                    <div className='scheme-card'>
+                                        <div className='img-card'>
+                                            <img src={Icon14} alt='farmer'></img>
+                                        </div>
+                                        <h3>National Pension Scheme for Traders and Self Employed Persons</h3>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div className='scheme-wrapper'>
+                                <a href='/generic-medicine'>
+                                    <div className='scheme-card'>
+                                        <div className='img-card'>
+                                            <img src={Icon15} alt='farmer'></img>
+                                        </div>
+                                        <h3>Pradhan Mantri Jan Aushadhi Scheme</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href='/applicable-scheme-page'><button>View More</button></a>
                         </div>
                     </div> 
                     :

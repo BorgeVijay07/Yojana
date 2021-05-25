@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AgricultureController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/sign-up', [ UserController::class, 'register']);
 
 Route::post('/login', [ UserController::class, 'login']);
+
+Route::post('/dashboard1', [ AgricultureController::class, 'agriculture_record']);
+

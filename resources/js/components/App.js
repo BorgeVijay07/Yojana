@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Agriculture from './Agriculture';
+import ApplicableSchemePage from './ApplicableSchemePage';
 import ChildCare from './Child Care';
 import ChildDevelopment from './Child Development';
 import Dashboard from './Dashboard';
@@ -31,6 +32,7 @@ function App() {
                 <Route path='/sign-up' exact component={Signup}></Route>
                 <Route path='/dashboard1' exact component={Dashboard}></Route>
                 <Route path='/scheme-page' exact component={SchemePage}></Route>
+                <Route path='/applicable-scheme-page' exact component={ApplicableSchemePage}></Route>
                 <Route path='/agriculture' exact component={Agriculture}></Route>
                 <Route path='/child-care' exact component={ChildCare}></Route>
                 <Route path='/child-development' exact component={ChildDevelopment}></Route>

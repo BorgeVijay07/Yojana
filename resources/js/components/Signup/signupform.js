@@ -14,24 +14,24 @@ export function SignupForm(props) {
     const [cpassword, setCpassword] = useState("");
     const history = useHistory();
 
-    async function signup() {
+    // async function signup() {
 
-        let item = {name, email, password};
+    //     let item = {name, email, password};
     
-        let result = await fetch("http://localhost:8080/api/sign-up", {
-            method: 'POST',
-            headers:{
-                "Content-Type" : "application/json",
-                "Accept" : "application/json"
-            },
-            body: JSON.stringify(item)
-        })
-        result = await result.json();
-        console.warn("result", result);
-        localStorage.setItem("user_info",JSON.stringify(result));
-        window.location.reload();
-        history.push('/dashboard1');
-    }
+    //     let result = await fetch("http://localhost:8080/api/sign-up", {
+    //         method: 'POST',
+    //         headers:{
+    //             "Content-Type" : "application/json",
+    //             "Accept" : "application/json"
+    //         },
+    //         body: JSON.stringify(item)
+    //     })
+    //     result = await result.json();
+    //     console.warn("result", result);
+    //     localStorage.setItem("user_info",JSON.stringify(result));
+    //     window.location.reload();
+    //     history.push('/dashboard1');
+    // }
 
     return(
         <BoxContainer>
@@ -50,7 +50,8 @@ export function SignupForm(props) {
                 placeholder='Confirm Password'/>
             </FormContainer>
             <Marginer direction='vertical' margin={10} />
-            <SubmitButton type='submit' onClick={signup}>Signup </SubmitButton>
+            {/* <SubmitButton type='submit' onClick={signup} href='/dashboard'>Signup </SubmitButton> */}
+            <SubmitButton to='/dashboard1'>Signup </SubmitButton>
             <Marginer direction='vertical' margin='1em' />
             <MutedLink href='#'>Already have an account? <BoldLink href='#' onClick={switchToSignin}>
                 Signin

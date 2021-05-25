@@ -38,9 +38,9 @@ const ContactUs = () => {
                                         <Img src={Icon1}/>
                                     </ImgWrap>
                                     <ContactInfoListContent>
-                                        2912 Meadowbrook Road <br />
-                                        Los Angles, <br />
-                                        90017
+                                        Vikhroli Parksite,<br />
+                                        Hanuman Nagar A, <br />
+                                        Mumbai - 400079.
                                     </ContactInfoListContent>
                                 </ContactInfoListItem>
                                 <ContactInfoListItem>
@@ -48,7 +48,7 @@ const ContactUs = () => {
                                         <Img src={Icon2}/>
                                     </ImgWrap>
                                     <ContactInfoListContent>
-                                        lorem@ipsum.com
+                                        yojana@test.com
                                     </ContactInfoListContent>
                                 </ContactInfoListItem>
                                 <ContactInfoListItem>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                                         <Img src={Icon3}/>
                                     </ImgWrap>
                                     <ContactInfoListContent>
-                                        310-286-1623
+                                        022-9856981
                                     </ContactInfoListContent>
                                 </ContactInfoListItem>
                             </ContactInfoList>

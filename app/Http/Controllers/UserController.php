@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+
 class UserController extends Controller
 {
     function register(Request $req) {
@@ -26,4 +27,10 @@ class UserController extends Controller
         }
         return $user;
     }
+
+    public function __construct()
+    {
+        $this->middleware('auth'); //ensures user is logged in
+    }
+
 }

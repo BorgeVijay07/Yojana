@@ -179,6 +179,19 @@ main {
     z-index: 0;
 }
 
+marquee{
+    color: #DFECFC;
+    background-color: #212738;
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 768px){
+    marquee{
+        font-size: 14px;
+    }
+}
+
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -288,6 +301,60 @@ main {
     }
 }
 
+.applicable {
+    height: auto;
+    /* padding: 60px auto; */
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #DFECFC;
+    border-radius: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 960px) {
+    .applicable {
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .applicable {
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .applicable {
+        height: 920px;
+    }
+}
+
+.applicable h1{
+    font-size: 35px;
+    color: #212738;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .applicable h1{
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .applicable h1{
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+}
+
+
 .scheme-wrapper {
     max-width: 1000px;
     margin: 0 10px;
@@ -373,6 +440,28 @@ main {
     .scheme-card h3{
         font-size: 14px;
     }
+}
+
+.applicable button{
+    border-radius: 50px;    
+    padding: 10px 20px;
+    margin-top: 25px;
+    background: #212738;
+    white-space: nowrap;
+    color: #DFECFC;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.applicable button:hover{
+        transition: all 0.2s ease-in-out;
+        background: #DFECFC;
+        color: #212738;
+        border: 2px solid #212738;
 }
 
 .available button{

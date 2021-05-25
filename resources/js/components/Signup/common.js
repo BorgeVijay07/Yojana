@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const BoxContainer = styled.div`
     width: 100%;
@@ -57,7 +58,7 @@ export const Input = styled.input`
     }
 `
 
-export const SubmitButton = styled.button`
+export const SubmitButton = styled(Link)`
     width: 100%;
     padding: 11px 40%;
     color: #212738;

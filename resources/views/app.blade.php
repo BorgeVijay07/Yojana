@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> 
 
-{{-- <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="33bdb82e-19f0-4635-8403-8ac63d83bc56" ></script> --}}
+<script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="33bdb82e-19f0-4635-8403-8ac63d83bc56" ></script>
 </head>
 
 <body>
